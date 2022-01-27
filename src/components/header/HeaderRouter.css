@@ -1,0 +1,34 @@
+.headerRouter {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 0 10px 5px 10px;
+    color: #2e7994;
+    transition: none;
+    transition: transform 0.25s;
+    cursor: pointer;
+}
+
+.headerRouter:hover {
+    transform: translateY(-0.5px);
+    color: #60a3bc;
+}
+
+.headerRouter:active {
+    transform: translateY(0.5px);
+}
+
+
+.headerRouter__icon {
+    font-size: x-small;
+}
+
+.headerRouter__title {
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.active {
+    border-bottom: 1.25px solid #222f3e;
+}
