@@ -1,0 +1,32 @@
+.feed {
+    display: flex;
+    flex-direction: column;
+}
+
+.feed__inputContainer {
+    width: 100%;
+}
+
+.feed__input {
+    background-color: #fff;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+}
+
+.feed__input form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* .post-btn {
+    visibility: hidden;
+} */
+
+.create-icon {
+    transform: translateX(35px);
+}

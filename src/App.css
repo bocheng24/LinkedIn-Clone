@@ -9,7 +9,8 @@
 .app__container {
   min-height: 100vh;
   max-width: 1140px;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  gap: 20px;
   margin-top: 35px;
 }
