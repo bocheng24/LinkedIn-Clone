@@ -51,6 +51,7 @@
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: #fff;
+    margin-bottom: 10px;
 }
 
 .sidebar__stat {
@@ -68,4 +69,35 @@
 .stats__number {
     color: #0a66c2 !important;
 
+}
+
+.sidebar__bottom {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.sidebar__bottom p,
+.sidebar__recentItem {
+    padding: 5px 8px;
+}
+
+.sidebar__recentItem {
+    display: flex;
+    align-items: center;
+    color: #2980b9;
+    font-size: 13.5px;
+    font-weight: bold;
+    cursor: pointer;    
+}
+
+.sidebar__recentItem:hover {
+    background-color: #297fb918;
+    border-radius: 8px;
+}
+
+.sidebar__recentItem p {
+    margin-left: -5px;
 }
