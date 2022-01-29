@@ -3,6 +3,7 @@ import './Feed.css'
 import CreateIcon from '@mui/icons-material/Create';
 import { Button, TextField } from '@mui/material'
 import InputOptions from './InputOptions';
+import Post from './Post';
 
 function Feed() {
   return (
@@ -36,6 +37,8 @@ function Feed() {
                 <InputOptions />
               </div>
           </div>
+
+          <Post image="https://images.unsplash.com/photo-1639905517737-a994704df20c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3270&q=80" />
       </div>
   );
 }
