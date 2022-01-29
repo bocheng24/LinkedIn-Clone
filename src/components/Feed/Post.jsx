@@ -34,23 +34,21 @@ const inputOptions = [
     }
 ]
 
-function Post({ image }) {
-  console.log(image)
+function Post({ name, description, photo, message, image }) {
+
   return (
     <div className="post">
         <div className="post__header">
-            <Avatar src="https://avatars.dicebear.com/api/adventurer/your-custom-seed.svg" />
+            <Avatar src={ photo } />
 
             <div className="post__userInfo">
-                <h4>Joe Lang</h4>
-                <p>Python freelancer, fullstack developer</p>
+                <h4>{ name }</h4>
+                <p>{ description }</p>
             </div>
         </div>
 
         <div className="post__body">
-            <p>
-            Because RevenueZen works mainly with early-stage companies who are using LinkedIn as a source of revenue, not just another place to show off their brand, our focus is on strategies that lead to revenue and leads.
-            </p>
+            <p>{ message }</p>
             { image && <img src={ image } alt="" /> }
         </div>
         
