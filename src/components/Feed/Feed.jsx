@@ -2,15 +2,13 @@ import React from 'react';
 import './Feed.css'
 import CreateIcon from '@mui/icons-material/Create';
 import { Button, TextField } from '@mui/material'
+import InputOptions from './InputOptions';
 
 function Feed() {
   return (
       <div className="feed">
           <div className="feed__inputContainer">
               <div className="feed__input">
-                {/* <div className="create-icon">
-                    <CreateIcon />
-                </div> */}
                 <form>
                     <TextField InputProps={
                                     {
@@ -26,9 +24,16 @@ function Feed() {
                                                        </Button>)
                                     }
                                 } 
-                              className='text-input' fullWidth/>
+                              className='text-input'
+                              placeholder='Post today'
+                              fullWidth
+                      />
                     
                 </form>
+              </div>
+
+              <div className="feed__inputOptions">
+                <InputOptions />
               </div>
           </div>
       </div>
