@@ -22,7 +22,7 @@
     align-items: center;
 }
 
-.header__left > img {
+.logo {
     width: 35px;
     height: 35px;
     margin-right: 10px;

@@ -1,0 +1,37 @@
+.auth-body {
+    background-color: rgba(230, 230, 230, 0.5);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.full-logo {
+    width: 150px;
+}
+
+.auth-container {
+    margin-top: -50px;
+    background-color: #fff;
+    width: 350px;
+    padding: 30px 30px 35px 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.auth-container h2 {
+    padding: 10px 0;
+    font-size: 1.75rem;
+}
+
+.auth-container h4 {
+    margin-bottom: 25px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+
+.text-field {
+    margin-bottom: 18px;
+}

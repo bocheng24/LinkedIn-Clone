@@ -35,8 +35,6 @@ function Feed() {
       setPosts(latestPosts)
 
     });
-
-    console.log(posts)
     
   }, [])
   
