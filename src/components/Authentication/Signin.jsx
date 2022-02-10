@@ -1,4 +1,6 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import './auth.css'
 import fullLogo from '../../static/imgs/Linkedin-Logo-2011-2019.png'
 import { auth } from '../../db'
@@ -8,6 +10,17 @@ import Button from '@mui/material/Button'
 
 function Signin() {
   console.log(auth)
+
+  let navigate = useNavigate();
+
+  const signIn = () => {
+    
+}
+  
+  const signUp = () => {
+    navigate('/signup');
+  }
+
   return (
     <div className='auth-body'>
         <div className="auth-container">
@@ -31,11 +44,20 @@ function Signin() {
                         type="password"
                         autoComplete="current-password"
                         fullWidth
+                        required
                     />
                 </div>
 
-                <Button variant='contained' fullWidth size='large'>Sign In</Button>
+                <Button variant='contained' 
+                        fullWidth size='large'
+                        onClick={ signIn }
+                >
+                    Sign In
+                </Button>
             </form>
+            <div className="sign-up-box">
+                <p>Not a member? Click to <span onClick={ signUp }>Sign Up</span></p>
+            </div>
         </div>
     </div>
   ) ;

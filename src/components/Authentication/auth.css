@@ -35,3 +35,19 @@
 .text-field {
     margin-bottom: 18px;
 }
+
+.sign-up-box {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.sign-up-box p {
+    font-size: 13px;
+}
+
+.sign-up-box p span {
+    cursor: pointer;
+    color: #3498db;
+}
+
