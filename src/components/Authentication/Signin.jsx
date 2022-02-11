@@ -31,7 +31,6 @@ function Signin() {
                 <div className="text-field">
                     <TextField
                         required
-                        id="outlined-required"
                         label="Username or email"
                         fullWidth
                     />
@@ -39,7 +38,6 @@ function Signin() {
 
                 <div className="text-field">
                     <TextField
-                        id="outlined-password-input"
                         label="Password"
                         type="password"
                         autoComplete="current-password"
