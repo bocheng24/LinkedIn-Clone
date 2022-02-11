@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
 import { auth } from '../../db'
@@ -10,11 +11,10 @@ import Button from '@mui/material/Button'
 import fullLogo from '../../static/imgs/Linkedin-Logo-2011-2019.png'
 import './auth.css'
 
-import { validInput } from '../utils' 
-
 function Signup() {
 
-    console.log(auth)
+    // console.log(auth)
+    const dispatch = useDispatch()
 
     const [username, setUsername] = useState('')
     const [email, setEmail] = useState('')
@@ -32,15 +32,31 @@ function Signup() {
         navigate('/signin');
     }
     
-    const signUpApp = e => {
+    const signUpApp = async e => {
         
         e.preventDefault()
 
         if (email && username && password && confPassword && password === confPassword) {
-            console.log('Form valid')
+
+          createUserWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            // Signed in 
+            const user = userCredential.user;
+            user.displayName = username
+            console.log(user.displayName)
+          })
+          // .then(() => {
+          //     dispatchEvent()
+          //   }
+
+          // )
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            alert(errorMessage)
+          });
         } 
         else {
-            console.log('Form invalid')
             setEmailValid(false)
             setUsernameValid(false)
             setPasswordValid(false)
